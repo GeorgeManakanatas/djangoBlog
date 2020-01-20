@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-
+    {% load static %}
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -15,19 +15,19 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="../../static/css/base.css">
-    <link rel="stylesheet" href="../../static/css/vendor.css">
-    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
+    <script src="{% static 'js/pace.min.js' %}"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
 </head>
 
@@ -43,7 +43,7 @@
 
             <div class="home-logo">
                 <a href="index-static.html">
-                    <img src="images/logo.svg" alt="Homepage">
+                    <img src="{% static 'images/logo.svg' %}" alt="Homepage">
                 </a>
             </div>
 
@@ -225,9 +225,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 

@@ -25,7 +25,10 @@ SECRET_KEY = '5@fu0%j4@9^)utp3w+14!#7_bc(9x$5$+!0*vi&**)2#e235)b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0',
+                 'localhost',
+                 '127.0.0.1',
+                 '127.0.0.1:8000']
 
 
 # Application definition
@@ -38,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'mycvpage',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +74,25 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djangoBlog.wsgi.application'
 
+# Logging
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'djangoBlog\\logs\\debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -114,9 +137,19 @@ USE_L10N = True
 
 USE_TZ = True
 
+APPEND_SLASH = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'blog/static/blog'),
+    os.path.join(BASE_DIR, 'mycvpage/static/mycvpage'),
+)
+STATICFILES_FINDERS = (
+'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+'django.contrib.staticfiles.finders.FileSystemFinder',
+)

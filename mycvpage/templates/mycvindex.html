@@ -1,0 +1,997 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   {% load static %}
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="{% static 'css/default.css' %}">
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}">
+   <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+   <!-- Script
+   ================================================== -->
+	<script src="{% static 'js/modernizr.js' %}"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{% static 'css/default.css' %}" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#MyStory">My Story</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Places & Hobbies</a></li>
+            <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hello, I am <br> Georgios Manakanatas</h1>
+            <h3>
+                An Antwerp based <span>software architect</span> and <span>physicist</span>. I split my time between project overview and design as well as development using Python, Java and JavaScript. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                and learn more <a class="smoothscroll" href="#about">about me</a>.
+            </h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://github.com/GeorgeManakanatas"><i class="fa fa-github fa-fw"></i></a></li>
+               <li><a href="https://be.linkedin.com/in/george-manakanatas"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="skype:george.manakanatas?userinfo"><i class="fa fa-skype"></i></a></li>
+               <li><a href="https://www.facebook.com/gmanakanatas"><i class="fa fa-facebook"></i></a></li>
+               
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="{% static 'images/socialMediaPic.png' %}" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p class="drop-cap">
+              Growing up in a STEM oriented environment gave me a love for science and technology from an early age. When the time came to look past high school I decided to purse a bachelor's degree in Physics.
+              It was a good compromise between the field of engineering that was too practical for my taste and the more theoretical alternatives. 
+			  Managing at the same time to tackle both mundane as well as exotic topics and make them approachable.
+            </p>
+            <p>
+              After graduation I worked as a Physics and Mathematics tutor for several years. However at some point I decided that I wanted to change my career. 
+			  After trying and failing to reconcile my work schedule with the time requirements of various master's programs in various universities I found the perfect match in the Hellenic Open University.
+			  Allowing me to pursue my interest in parallel with my work. 
+            <p>
+              In 2015 after finishing my Master's in Information Systems I subsequently found work as a developer and software engineer for a consulting firm in Belgium.
+			  The next three and a half years where an interesting and unique mix of acquiring applied and theoretical knowledge on the job in a wide array of tools and technologies. 
+			  Driven by the diverse needs of both the client base and the company projects in combination with the move to a new country forced a steep learning curve.
+			  The personal and professional growth however was worth the effort and the experience is one that I do not regret at all.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Georgios Manakanatas</span>
+               <br>
+						   <span><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Draakstraat 32 <br> 2018 Antwerp, BE</span>
+               <br>
+						   <span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 0030 6977 13 82 53</span>
+               <br>
+               <span><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; manakanatas@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="inc/CV/Georgios_Manakanatas_CV.pdf" rel="external" target="_blank" class="button"><i class="fa fa-download"></i> Download Curriculum Vitae</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Hellenic Open University</h3>
+                  <p class="info">Master's Degree in Information Systems<span>&bull;</span> <em class="date">2012 - 2015</em></p>
+
+                  <p>
+                    Curriculum: Information and Communication Technologies.<br>
+                    Main subjects: Computer Networks and Communications, Computer Architecture,Software Engineering, Software Design and Management Processing.<br>
+                    Thesis title: ”Blocking Inference Channels in Outsourced Data Mining.”<br>
+                    Relators: Prof. Ilias Stauropoulos, Prof. Basilios Berikios
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>University of Crete</h3>
+                  <p class="info">Bachelor's Degree in Physics<span>&bull;</span> <em class="date">2000 - 2009</em></p>
+
+                  <p>
+                    Curriculum: Physics and Mathematics.<br>
+                    Main subjects: Quantum Physics, Atmospheric Physics, Introduction to Circuit
+                    theory, Applied Geophysics, Elements of Electronics, Introduction to Optoelectronics,
+                    Financial Mathematics, Computational Physics
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+			
+			<div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3>VITO</h3>
+                    <p class="info">Software Architect <span>&bull;</span> <em class="date">November 2019 - today</em></p>
+
+                    <p>
+                        As software architect for the data science hub at VITO my work focuses on the following:<br />
+                        Designing specifications for our new projects or identifying areas that need improvement in our existing ones and providing realistic schedules for implementing them.
+                        Providing solutions to the unique problems that a research organization faces is rarely something that tis possible with existing software. 
+                        Therefore, out of the box thinking for changes to existing software or custom solution development are often mandatory.
+                    </p>
+                    <p>
+                        Working with my colleagues in the Data Science Hub to provide training in the tools and technologies that are quickly becoming requirements for researchers.
+                        As the volume of data that researchers have to work with increases and the push for increasing efficiency intensifies there is an ever growing need to automate as much of the work as possible.
+                        Identifying the sweet spot of the knowledge that researchers need to acquire as well as a clear and simple path to do so is key in supporting the organization’s digitization efforts.
+                    </p>
+                    <p>
+                        Hands on software development. Mostly in Python and JavaScript and always with an eye towards making the final product as user friendly as possible.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Apogado CVBA</h3>
+                  <p class="info">Software Engineer / Consultant<span>&bull;</span> <em class="date">April 2016 - October 2019</em></p>
+
+                  <p>
+                    As a software engineer in Apogado I focused mostly on back
+                    end development and more specifically the following: <br/>
+                    Expanding and modifying the eGov connector SOA product. Running on
+                    the Talend ESB but relying only on Java and open source Apache
+                    components to avoid vendor lock in. <br/> Preliminary
+                    architecture and continued development for the GDPRBox product.
+                    Built on a JavaScript only mentality on a MEAN stack.<br/>
+                    As well as small ad hoc development for clients as the need
+                    arode and Unit ,API testing for all projects.
+                  </p>
+                  <p>
+                    As a consultant I mostly focus on evaluating client processes and
+                    software with an emphasis on overall architecture, security, user
+                    experience and support / documentation. <br/>I also do small scale
+                    best effort scripting development or infrastructure as code when needed to
+                    meet any pressing requirements.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Hellenic Open University</h3>
+                  <p class="info">Master's Thesis<span>&bull;</span> <em class="date">September 2014 - September 2015</em></p>
+
+                  <p>
+                    Knowledge hiding and Association rule hiding, hiding frequent itemsets,
+                     exact knowledge hiding through database extension, k-anonnymity, Rob frugal anonymisation, Apriori data mining algorithm.
+                     Python programming, tkinter GUI package, LaTeX text editor.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Freelance, Heraclion & Athens, Greece</h3>
+                  <p class="info">Physics & Mathematics tutor<span>&bull;</span> <em class="date">September 2004 - September 2015</em></p>
+
+                  <p>
+                    Physics and Mathematics tutoring for high school and junior high school students.
+                    Advanced Physics and Mathematics classes for College students,
+                    preparatory courses for end of semester examinations.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Giorgos Siotos & Aenaon Tutoring Center</h3>
+                  <p class="info">Part-time collaboration<span>&bull;</span> <em class="date">September 2010 - September 2015</em></p>
+
+                  <p>
+                    Giorgos Siotos Tutoring Center: 09/2010-09/2011 Physics and Mathematics
+                    tutoring for High School and Junior High School students.
+                    Aenaon Tutoring Center: 09/2011-09/2014 Physics and Mathematics tutoring
+                    for High School and Junior High School students.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Part-time work</h3>
+                  <p class="info">Greenpeace & BFS Group<span>&bull;</span> <em class="date">March 2006 - November 2007</em></p>
+
+                  <p>
+                    BFS Group: 09/2007-11/2007 Direct Marketing, Customer Service, Portfolio Management, Database Management.
+                    Greenpeace: 03/2006-05/2006 Direct Dialogue Campaigner/Fundraiser.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>
+              <h5>Programming</h5>
+                Good working knowledge of Python, Java, JavaScript, Bash scripting and
+                backend development in the LAMP and  MEAN stacks.<br/>
+                Working knowledge in SQL, R and C.
+            </p>
+            <div class="bars">
+
+    				   <ul class="skills">
+							<li><span class="bar-expand Python"></span><em>Python</em></li>
+							<li><span class="bar-expand Javascript"></span><em>Javascript</em></li>
+							<li><span class="bar-expand Bash"></span><em>Bash</em></li>
+							<li><span class="bar-expand Java"></span><em>Java</em></li>
+						</ul>
+
+    				</div><!-- end skill-bars -->
+            <p>
+              <h5>Frameworks</h5>
+                Good workng knowledge of Node.js and Express.js framewokrs.<br/>
+                Working knowledge of Apache CXF, Camel, Karaf, Spring, the Talend enterprise
+                service bus.<br/>
+                Basic knowledge of Angular, Bootstrap, Django
+            </p>
+
+            <div class="bars">
+
+               <ul class="skills">
+                  <!-- <li><span class="bar-expand Angular"></span><em>Angular</em></li> -->
+                  <li><span class="bar-expand ApacheCamel"></span><em>Camel</em></li>
+                  <li><span class="bar-expand ApacheCXF"></span><em>CXF</em></li>
+                  <li><span class="bar-expand Express"></span><em>Express</em></li>
+                  <li><span class="bar-expand Node"></span><em>Node</em></li>
+              </ul>
+
+            </div><!-- end skill-bars -->
+
+            <p>
+              <h5>Tools</h5>
+                Good knowledge of Ansible, Docker, Selenium, Postman, SoapUI, Oracle VM VirtualBox<br/>
+                Working knowledge of Apache Maven, Jenkins, OpanAPI and Talend Open Studio
+            </p>
+            <p>
+              <h5>General</h5>
+                Solid mathematical background and analytical skills from my physics studies. Basic knowledge of Data mining as well as data anonymization and de-identification methods.<br>
+            </p>
+            <p>
+              <h5>Languages</h5>
+                <dl class="lining">
+                  <dt><i>Dutch</i></dt>
+      				      <dd>Less than conversational, learning as fast as I can.</dd>
+                </dl>
+                <dl class="lining">
+                  <dt><i>English</i></dt>
+      				      <dd>Near Native Fluency, Certificate of Proficiency in English, University of Cambridge.</dd>
+                </dl><dl class="lining">
+                  <dt><i>German</i></dt>
+      				      <dd>Fluent, Zeugnis Zentrale Mittelstufenprüfung, Goethe Institut.</dd>
+                </dl><dl class="lining">
+                  <dt><i>Greek</i></dt>
+      				      <dd>Native speaker.</dd>
+                </dl>
+            </p>
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- My Story Section
+   ================================================== -->
+   <section id="MyStory">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>My Story</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                    <li>
+                       <blockquote>
+                          <p> My story so far. <br>
+                            Physicist! Teacher! Software Engineer! Greek!
+                          </p>
+                          <cite>Georgios Manakanatas</cite>
+                       </blockquote>
+                    </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>It is widely believed that modern workers will need to change multiple careers during their working lives.
+                             Being a scientist I had to validate the hypothesis by experiment,
+                             and since no one I knew seemed to be prepared to volunteer to be my test subject that left me with only one option:
+                             I would be my own guinea pig! So a few years ago I set out to start a new career and see how things would go,
+                             for science of course!
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>My background was a diploma in Physics from the University of Crete. My first profesional steps where as a tutor of Physics and Mathematics
+                             working both freelance and in collaboration with various tutoring centers in Heraclion and Athens in Greece.
+                              In paralel however I had always been involved with compluters as a hobby and when time came to switch careers
+                              this interest allong with my good mathematical background from my diploma made the IT field an easy choice
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>After some failed starts trying to find a part time master's cource that would not clash with my working schedule
+                              I found the perfect match in the Hellenic Open University. Three years lots of coffee and long nights later I was armed
+                              with an M.Sc. in Information Science, knowledge of Software Design and Management Processing, basic coding skills as well
+                              as data mining methods and tools from my Thesis. With these I started testing the hypothesis that someone would actually
+                              pay me to apply these new skills in practice.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Predictably the opportunity presented itself in a manner consistent with murphy's law. The job I found was one
+                             in data integration put none of my fledgling skills in data mining, python and C to use and required a completely different set presenting
+                             a new and steep learning curve. Familiarizing myself with a new set of middleware frameworks and tools as well as new languages on the
+                             job was often hectic and always stressful but after a few years of working in the field I am now confident in my abilities.
+                           </p>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>While it's too early to tell the experiment seems to be going well. I have moved on to work as a software architect at VITO 
+						   providing me with new opportunities and challenging me to put all the skills I have developed so far to the test! 
+                           </p>
+                           <!-- <cite>Mr. Adobe</cite> -->
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- My Story Section End-->
+
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+<!-- ======================= Important places row ====================================== -->
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Important places</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="{% static 'images/portfolio/athens.jpg' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Athens</h5>
+                              <p>Hometown</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="{% static 'images/portfolio/heraklion2.jpg' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Heraclion</h5>
+                              <p>Studies</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="{% static 'images/portfolio/antwerp2.png' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Antwerp</h5>
+                              <p>Work</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+              <div class="columns portfolio-item">
+                 <div class="item-wrap">
+
+                    <a href="#modal-04" title="">
+                       <img alt="" src="{% static 'images/portfolio/arta2.png' %}">
+                       <div class="overlay">
+                          <div class="portfolio-item-meta">
+                         <h5>Arta</h5>
+                             <p>Origins</p>
+                      </div>
+                       </div>
+                       <div class="link-icon"><i class="icon-plus"></i></div>
+                    </a>
+
+                 </div>
+             </div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-athens2.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Athens</h4>
+			      <p>Born and raised in Cholargos, a suburb of Athnes Greece.
+              Located in a kind of urban goldilocks zone it's close enough to the city center to make the "city life" easily accessible
+              while being far away to not be really downtown. Like many places in Greece it has a high population density (rivaling that of Tokyo) while at the same time
+            feeling friendly and uncrowded.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Hometown</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.dpapxol.gov.gr/english.html">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-uoc.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Heraclion</h4>
+			      <p>After school I moved to the city of Heraklion Crete to study physics at the University of Crete.
+              I fell in love with the port city as well as the excellent university and will carry a piece of it with me wherever I go.
+              There I also made my first professional steps as a tutor before circumstances forced me to leave the island and return to Athens. </p>
+               <span class="categories"><i class="fa fa-tag"></i>Studies, early work</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.en.uoc.gr/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-zurenborg.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Antwerp</h4>
+			      <p>Moved to my third port city, Antwerp Belgium, in 2016 for work to start a new career as a software engineer.
+              I was fortunate to find a place to rent in dazzling Zurenborg and in the past year have come to love both the city and it's people.
+              </p>
+               <span class="categories"><i class="fa fa-tag"></i>Work, Career change</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.antwerpen.be/nl/home">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+        <div id="modal-04" class="popup-modal mfp-hide">
+
+         <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-arta.jpg' %}" alt="" />
+
+         <div class="description-box">
+           <h4>Arta</h4>
+           <p>Arta is a beautiful small city in western Greece that is near and dear to my heart.
+             It is the birthplace of my parents, home to my extended family and a treasure chest of happy childhood memories. </p>
+              <span class="categories"><i class="fa fa-tag"></i>Extended family</span>
+         </div>
+
+           <div class="link-box">
+              <a href="http://www.arta.gr/">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+           </div>
+
+       </div><!-- modal-03 End -->
+
+      </div> <!-- row End -->
+
+<!--=========================== Hobbies row ======================================= -->
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Hobbies and interests</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img class="scale-with-grid" alt="" src="{% static 'images/portfolio/Knight-chess.jpg' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Board games</h5>
+                              <p>Chess and Go</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="{% static 'images/portfolio/cinema.jpg' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Movies</h5>
+                              <p>At the cinema and at home</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img class="scale-with-grid" alt="" src="{% static 'images/portfolio/book2.png' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Books</h5>
+                              <p>Science fiction</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
+              <div class="columns portfolio-item">
+                 <div class="item-wrap">
+
+                    <a href="#modal-08" title="">
+                       <img alt="" src="{% static 'images/portfolio/ellinikos.jpg' %}">
+                       <div class="overlay">
+                          <div class="portfolio-item-meta">
+                         <h5>Good coffee</h5>
+                             <p>Coffee with friends</p>
+                      </div>
+                       </div>
+                       <div class="link-icon"><i class="icon-plus"></i></div>
+                    </a>
+
+                 </div>
+             </div> <!-- item end -->
+			 
+			 <div class="columns portfolio-item">
+                 <div class="item-wrap">
+
+                    <a href="#modal-09" title="">
+                       <img alt="" src="{% static 'images/portfolio/biking.jpg' %}">
+                       <div class="overlay">
+                          <div class="portfolio-item-meta">
+                         <h5>Cycling</h5>
+                             <p>Road cycling</p>
+                      </div>
+                       </div>
+                       <div class="link-icon"><i class="icon-plus"></i></div>
+                    </a>
+
+                 </div>
+             </div> <!-- item end -->
+			 
+			 <div class="columns portfolio-item">
+                 <div class="item-wrap">
+
+                    <a href="#modal-10" title="">
+                       <img alt="" src="{% static 'images/portfolio/electronics.jpg' %}">
+                       <div class="overlay">
+                          <div class="portfolio-item-meta">
+                         <h5>Tinkering</h5>
+                             <p>Playing around with electronics</p>
+                      </div>
+                       </div>
+                       <div class="link-icon"><i class="icon-plus"></i></div>
+                    </a>
+
+                 </div>
+             </div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+        --------------------------------------------------------------- -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{% static 'mycvpage/images/portfolio/modals/m-Go-board.jpg' %}" alt="" />
+
+          <div class="description-box">
+            <h4></h4>
+            <p>Ever since my father taught me chess as a young boy I have always enjoyed the game and try to play on a regular basis online or in person.
+            While I never studied chess in a systematic manner in order to improve my game, my recent introduction to the fascinating game of Go,
+            has renewed my interest in my first love as well and now I am looking to find books and clubs for both.  </p>
+               <span class="categories"><i class="fa fa-tag"></i>Chess, Go, Board games</span>
+          </div>
+
+            <div class="link-box">
+               <!-- <a href="http://www.dpapxol.gov.gr/english.html">Details</a> -->
+             <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+        </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{% static 'mycvpage/images/portfolio/modals/m-riviera-inexarchia.jpg' %}" alt="" />
+
+          <div class="description-box">
+            <h4></h4>
+            <p>As a movie buff I enjoy watching films both at home and as often as I can at the movie theater.
+              One of the things I miss the most from back home are the open air cinemas of Greece. </p>
+               <span class="categories"><i class="fa fa-tag"></i>Film, Movies, Open air cinema</span>
+          </div>
+
+            <div class="link-box">
+               <!-- <a href="http://www.en.uoc.gr/">Details</a> -->
+             <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+        </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{% static 'mycvpage/images/portfolio/modals/m-hal9000.jpg' %}" alt="" />
+
+          <div class="description-box">
+            <h4></h4>
+            <p>A passion that started in my early teens and is still with me to this day is reading any and all science fiction books I can get my hands on.
+              All other literary genres are welcome and apreciated as well, but even crime fiction that is my second favorite is a very distant second. </p>
+               <span class="categories"><i class="fa fa-tag"></i>Books, Sci fi, Reading</span>
+          </div>
+
+            <div class="link-box">
+               <!-- <a href="https://www.antwerpen.be/nl/home">Details</a> -->
+             <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+        </div><!-- modal-07 End -->
+
+        <div id="modal-08" class="popup-modal mfp-hide">
+
+         <img class="scale-with-grid" src="{% static 'mycvpage/images/portfolio/modals/m-kydathinaiwn.jpg' %}" alt="" />
+
+         <div class="description-box">
+           <h4></h4>
+           <p>Being Greek I of course can't help but love our favorite passtime that is to meet friends at a cafe and have loud and animated conversations,
+              usually over politics, while enjoying a good cup of coffee. <br> A habit that often has people from northern Europe, for reasons that are beyond my comprehension,
+               half expecting an actual fight to break out in the middle of our pleasant and friendly discussion. ;)</p>
+              <span class="categories"><i class="fa fa-tag"></i>Coffee, Friends, Loudness</span>
+         </div>
+
+           <div class="link-box">
+              <!-- <a href="http://www.arta.gr/">Details</a> -->
+            <a class="popup-modal-dismiss">Close</a>
+           </div>
+
+       </div><!-- modal-08 End -->
+	   
+	   <div id="modal-09" class="popup-modal mfp-hide">
+
+         <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-biking.jpg' %}" alt="" />
+
+         <div class="description-box">
+           <h4></h4>
+           <p>Living in Belgium for a few years now I caught the biking bug. While nowere near as cool (or fit) as the pictures here whould suggest,
+		   I am the proud owner of a good second had roadbike. Slowly working on both my fittness level and ever longer trips in this very conveniently flat part of the world.</p>
+              <span class="categories"><i class="fa fa-tag"></i>Bikes, Fitness</span>
+         </div>
+
+           <div class="link-box">
+              <!-- <a href="http://www.arta.gr/">Details</a> -->
+            <a class="popup-modal-dismiss">Close</a>
+           </div>
+
+       </div><!-- modal-09 End -->
+	   
+		<div id="modal-10" class="popup-modal mfp-hide">
+
+		 <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-electronics.jpg' %}" alt="" />
+
+		 <div class="description-box">
+		   <h4></h4>
+		   <p>Another of the hobbies that I have managed to pick up is playing around with electronics. 
+		   From switching to a mechanical keyboard, parts of which I seem to want to desolder every other Tuesday. To trying to get as much functionality as I can out of my Raspberry Pi.
+		   I tend to waste far more time than would be advisable on these small side projects.</p>
+			  <span class="categories"><i class="fa fa-tag"></i>Electronics, Mech keyboards, Raspberry Pi</span>
+		 </div>
+
+		   <div class="link-box">
+			  <!-- <a href="http://www.arta.gr/">Details</a> -->
+			<a class="popup-modal-dismiss">Close</a>
+		   </div>
+
+	   </div><!-- modal-10 End -->
+	   
+      </div> <!-- row End -->
+
+
+
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <!-- <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get Hosting.</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
+            <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.
+					</p>
+
+         </div>
+
+         <div class="three columns action">
+
+            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
+
+         </div>
+
+      </div>
+
+   </section>-->
+   <!-- Call-To-Action Section End-->
+
+
+
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+              <li><a href="https://github.com/GeorgeManakanatas"><i class="fa fa-github fa-fw"></i></a></li>
+              <li><a href="https://be.linkedin.com/in/george-manakanatas"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="skype:george.manakanatas?userinfo"><i class="fa fa-skype"></i></a></li>
+              <li><a href="https://www.facebook.com/gmanakanatas"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+
+   <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+   <script src="{% static 'js/waypoints.js' %}"></script>
+   <script src="{% static 'js/jquery.fittext.js' %}"></script>
+   <script src="{% static 'js/magnific-popup.js' %}"></script>
+   <script src="{% static 'js/init.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html class="no-js" lang="en">
 <head>
-
+    {% load static %}
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -15,8 +16,8 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}"> 
 
     <!-- script
     ================================================== -->
@@ -24,8 +25,8 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
 </head>
 
@@ -61,7 +62,7 @@
                 <div class="col-block entry">
                     <div class="entry__thumb">
                         <a href="index-static.html" title="static background">
-                            <img src="images/demo/count-static.jpg" srcset="images/demo/count-static.jpg 1x, images/demo/count-static@2x.jpg 2x" alt="">
+                            <img src="{% static 'images/demo/count-static.jpg' %}" srcset="{% static images/demo/count-static.jpg 1x, images/demo/count-static@2x.jpg 2x &}" alt="">
                         </a>
                     </div>
                     <div class="entry__title">
@@ -72,7 +73,7 @@
                 <div class="col-block entry">
                     <div class="entry__thumb">
                         <a href="index-slides.html" title="slideshow background">
-                            <img src="images/demo/count-slides.jpg" srcset="images/demo/count-slides.jpg 1x, images/demo/count-slides@2x.jpg 2x" alt="">
+                            <img src="{% static images/demo/count-slides.jpg %}" srcset="{% static images/demo/count-slides.jpg 1x, blog/images/demo/count-slides@2x.jpg 2x %}" alt="">
                         </a>
                     </div>
                     <div class="entry__title">
@@ -83,7 +84,7 @@
                 <div class="col-block entry">
                     <div class="entry__thumb">
                         <a href="index-particles.html" title="particles background">
-                            <img src="images/demo/count-particles.jpg" srcset="images/demo/count-particles.jpg 1x, images/demo/count-particles@2x.jpg 2x" alt="">
+                            <img src="{% static images/demo/count-particles.jpg %}" srcset="{% static blog/images/demo/count-particles.jpg 1x, blog/images/demo/count-particles@2x.jpg 2x %}" alt="">
                         </a>
                     </div>
                     <div class="entry__title">
@@ -110,9 +111,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static js/jquery-3.2.1.min.js %}"></script>
+    <script src="{% static js/plugins.js %}"></script>
+    <script src="{% static js/main.js %}"></script>
 
 </body>
 
