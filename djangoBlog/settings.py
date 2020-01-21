@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
     'mycvpage',
+    'website',
 ]
 
 MIDDLEWARE = [
@@ -146,8 +146,8 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'blog/static/blog'),
     os.path.join(BASE_DIR, 'mycvpage/static/mycvpage'),
+    os.path.join(BASE_DIR, 'website/static/website'),
 )
 STATICFILES_FINDERS = (
 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
